@@ -18,4 +18,40 @@ class BookService {
       console.error(`ERROR GET DATA: ${error.message}`);
     }
   }
+  async getCategories() {
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/books/categories`,
+        {
+          method: "GET",
+        }
+      );
+      if (response.ok) {
+        return await response.json();
+      } else {
+        return Promise.reject(response.statusText);
+      }
+    } catch (error) {
+      console.error(`ERROR GET DATA: ${error.message}`);
+    }
+  }
+  async getBooksByCategory(category) {
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/books/category/${category}`,
+        {
+          method: "GET",
+        }
+      );
+      if (response.ok) {
+        return await response.json();
+      } else {
+        return Promise.reject(response.statusText);
+      }
+    } catch (error) {
+      console.error(`ERROR GET DATA: ${error.message}`);
+    }
+  }
 }
+
+export default BookService;

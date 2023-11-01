@@ -21,7 +21,7 @@ export default function SearchBar() {
       <input
         type="search"
         id="default-search"
-        className="block w-full p-3 pl-10 text-sm bg-white border focus:outline-[#229BE0] hover:outline-[#229BE0] rounded-full hover:bg-[#CAF1FF] focus:bg-[#CAF1FF] ease-linear duration-100"
+        className="block w-full p-3 pl-10 text-sm bg-white border focus:outline-[#229BE0] hover:outline-[#229BE0] rounded-full hover:bg-[#eeeeee] focus:bg-[#eeeeee] ease-linear duration-100"
         placeholder="Search book..."
       />
     </div>

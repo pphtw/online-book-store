@@ -2,7 +2,7 @@ import SearchBar from "../molegules/SearchBar";
 
 export default function NavBar() {
   return (
-    <div className="w-full h-5 bg-white py-10 px-20 flex flex-row items-center gap-x-10 justify-center shadow-md">
+    <div className="w-full h-5 bg-white px-10 py-10 flex flex-row items-center gap-x-10 justify-center shadow-md">
       <div className=" text-3xl font-['Agbalumo'] text-[#229BE0] flex item-center gap-2 flex-row justify-between w-1/12">
         {/* <img src="/book.svg" className="w-10" /> */}
         <p>OBook</p>
@@ -14,9 +14,9 @@ export default function NavBar() {
       {/* menu */}
       <div className="flex flex-row gap-1 w-1/12">
         {/* cart */}
-        <button className="p-3 rounded-full">
+        <button className="p-3 rounded-full hover:bg-[#eeeeee] focus:bg-[#eeeeee]">
           <svg
-            className="w-10"
+            className="w-7"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -50,9 +50,9 @@ export default function NavBar() {
         </button>
 
         {/* account */}
-        <button className="p-3 rounded-full">
+        <button className="p-3 rounded-full hover:bg-[#eeeeee] focus:bg-[#eeeeee]">
           <svg
-            className="w-10"
+            className="w-7"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
